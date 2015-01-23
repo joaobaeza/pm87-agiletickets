@@ -108,14 +108,7 @@ public class Espetaculo {
 		int dias = Days.daysBetween(inicio, fim).getDays();
 		
 		
-		
-		for (int i = 0; i < dias;i++)
-		{
 			
-		}
-		
-		sessao.setInicio(inicio.toDateTime(horario));
-		lista.add(sessao);				
 		
 		return lista;
 	}

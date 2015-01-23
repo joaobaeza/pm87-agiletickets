@@ -87,36 +87,7 @@ public class EspetaculoTest {
 
 		return sessao;
 	}
-	@Test
-	public void criar1SessaoDe1Dia()
-	{
-		LocalDate inicio = new LocalDate(2015,1,20);
-		LocalDate fim = new LocalDate(2015,1,20);
-		LocalTime hora = new LocalTime(20,0);
-		Periodicidade periodicidade = Periodicidade.DIARIA;
-		
-		Espetaculo espetaculo = new Espetaculo();
-		List<Sessao> criaSessoes = espetaculo.criaSessoes(inicio, fim, hora, periodicidade);
-		
-		Assert.assertEquals(1,criaSessoes.size());
-		
-		Assert.assertEquals(new DateTime(2015, 1, 20, 20, 0), criaSessoes.get(0).getInicio());
-		
-	}
-	@Test
-	public void criar1SessaoDe2Dias()
-	{
-		LocalDate inicio = new LocalDate(2015,1,20);
-		LocalDate fim = new LocalDate(2015,1,21);
-		LocalTime hora = new LocalTime(20,0);
-		Periodicidade periodicidade = Periodicidade.DIARIA;
-		
-		Espetaculo espetaculo = new Espetaculo();
-		List<Sessao> criaSessoes = espetaculo.criaSessoes(inicio, fim, hora, periodicidade);
-		
-		Assert.assertEquals(2,criaSessoes.size());
-		
-		
-	}
+	
+	
 	
 }
